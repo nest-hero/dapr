@@ -1,4 +1,4 @@
-# Description: Dapr Module for NestJS
+# Dapr Module for NestJS
 [Dapr](https://dapr.io) module for [NestJS](https://nestjs.com),
 fully compatible with any Dapr and NestJS version. 
 
@@ -12,6 +12,18 @@ fully compatible with any Dapr and NestJS version.
 - [ ] Configuration API
 - [ ] Secret API
 
+## Installation
+```
+npm install nestjs-dapr
+```
+
+```
+yarn add nestjs-dapr
+```
+
+```
+pnpm add nestjs-dapr
+```
 
 ## Usage
 ### Pubsub
