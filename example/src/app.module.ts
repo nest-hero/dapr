@@ -4,14 +4,7 @@ import { AppService } from './app.service';
 import { DaprModule } from '../../lib/dapr.module';
 
 @Module({
-  imports: [
-    DaprModule.register([
-      {
-        pubsubname: 'pubsub',
-        topic: 'topic',
-      },
-    ]),
-  ],
+  imports: [DaprModule.register({ pubsubname: 'pubsub' })],
   controllers: [AppController],
   providers: [AppService],
 })

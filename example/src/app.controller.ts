@@ -1,13 +1,19 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller } from '@nestjs/common';
 import { AppService } from './app.service';
-import { Subscribe } from '../../lib/subsribe.decorator';
+import { Subscribe } from '../../lib/decorator/subsribe.decorator';
+import { DaprPubSubPayload } from '../../lib/type/payload';
 
+type TopicData = {
+  example: string;
+};
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Subscribe('example')
-  handleExampleEvent(): string {
-    return this.appService.getHello();
+  @Subscribe('topic')
+  handler(data: TopicData, fullPayload: DaprPubSubPayload): string {
+    console.log('AppController', data);
+    console.log('AppController', fullPayload);
+    return '';
   }
 }
