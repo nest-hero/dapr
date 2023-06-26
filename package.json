@@ -1,14 +1,17 @@
 {
   "name": "nestjs-dapr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
+  "keywords": ["nestjs", "dapr"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nestjs/nest-cli.git"
   },
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "author": "duylddev",
   "license": "ISC",
