@@ -1,12 +1,12 @@
 {
-  "name": "nestjs-dapr",
-  "version": "1.0.3",
+  "name": "@nest-hero/dapr",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "keywords": ["nestjs", "dapr"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nestjs/nest-cli.git"
+    "url": "git+https://github.com/nest-hero/dapr.git"
   },
   "type": "commonjs",
   "scripts": {
