@@ -14,15 +14,15 @@ fully compatible with any Dapr and NestJS version.
 
 ## Installation
 ```
-npm install nestjs-dapr
+npm install @nest-hero/dapr
 ```
 
 ```
-yarn add nestjs-dapr
+yarn add @nest-hero/dapr
 ```
 
 ```
-pnpm add nestjs-dapr
+pnpm add @nest-hero/dapr
 ```
 
 ## Usage
